@@ -54,7 +54,7 @@ ROOT_URLCONF = 'MTV_MartinGoni.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/Tin/Documents/ArVSC/DesafioEntregable/MTV_MartinGoni/Registro_Flia/Plantillas"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
