@@ -21,3 +21,8 @@ def familia(sel,nombre, apellido, edad,documento,email ):
 
     """)
 
+def lista_familiares(self):
+    
+    listaflia=Familia.objects.all()
+
+    return render(self,"Template_1.html",{"itegrantes_flia":listaflia})

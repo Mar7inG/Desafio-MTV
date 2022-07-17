@@ -7,6 +7,14 @@
     <title>MTV-MartinGoni</title>
 </head>
 <body>
-    
+    <ul>
+        
+        {% for flia in itegrantes_flia  %}
+            <li>{{flia.nombre}}{{flia.apellido}} {{flia.edad}}{{flia.documento}}{{flia.email}}</li>
+        {% endfor %}
+            
+
+
+    </ul>
 </body>
 </html>
