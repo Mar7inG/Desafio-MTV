@@ -8,5 +8,5 @@ class Familia(models.Model):
     apellido=models.CharField(max_length=40)
     documento=models.IntegerField()
     edad=models.IntegerField()
-    email=models.EmailField()
+    email=models.EmailField(max_length=40)
     
