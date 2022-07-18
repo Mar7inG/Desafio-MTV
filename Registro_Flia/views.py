@@ -11,9 +11,9 @@ def Inicio(request):
     documento=f"<h1>PAGINA DE INICIO</h1>"
     return HttpResponse( documento)
 
-def familia(sel,nombre, apellido, edad,documento,email ): 
+def familia(sel,nombre, apellido, edad,documento,email,fecha_nac=None ): 
     
-    familia=Familia(nombre=nombre, apellido=apellido, edad=edad,documento=documento,email=email)
+    familia=Familia(nombre=nombre, apellido=apellido, edad=edad,documento=documento,email=email,fecha_nac=None)
     familia.save()
     return HttpResponse(f""" 
     

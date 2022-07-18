@@ -9,4 +9,5 @@ class Familia(models.Model):
     documento=models.IntegerField()
     edad=models.IntegerField()
     email=models.EmailField(max_length=40)
+    fecha_nac=models.DateField()
     
