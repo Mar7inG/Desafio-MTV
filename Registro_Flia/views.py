@@ -13,7 +13,7 @@ def Inicio(request):
 
 def familia(sel,nombre, apellido, edad,documento,email,fecha_nac=None ): 
     
-    familia=Familia(nombre=nombre, apellido=apellido, edad=edad,documento=documento,email=email,fecha_nac=None)
+    familia=Familia(nombre=nombre, apellido=apellido, edad=edad,documento=documento,email=email,fecha_nac=fecha_nac)
     familia.save()
     return HttpResponse(f""" 
     
