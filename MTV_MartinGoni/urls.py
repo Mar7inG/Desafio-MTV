@@ -21,6 +21,6 @@ from Registro_Flia.views import familia,Inicio, lista_familiares
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Inicio),
-    path('Reg-Flia/<nombre>/<apellido>/<edad>/<documento>/<email>/<Fecha_nac>/', familia),
+    path('Reg-Flia/<nombre>/<apellido>/<edad>/<documento>/<email>/<fecha_nac>/', familia),
     path('Lista-Flia', lista_familiares ),
 ]

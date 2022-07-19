@@ -4,10 +4,10 @@ from django.db import models
 
 class Familia(models.Model):
 
-    nombre=models.CharField(max_length=40)
-    apellido=models.CharField(max_length=40)
-    documento=models.IntegerField()
-    edad=models.IntegerField()
-    email=models.EmailField(max_length=40)
-    fecha_nac=models.DateField(null=True)
+    nombre=models.CharField(max_length=40,blank=True )
+    apellido=models.CharField(max_length=40,blank=True )
+    documento=models.IntegerField(blank=True )
+    edad=models.IntegerField(blank=True )
+    email=models.EmailField(max_length=40,blank=True )
+    fecha_nac=models.DateField(null=True,blank=True )
     
